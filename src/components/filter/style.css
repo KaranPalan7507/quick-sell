@@ -1,0 +1,27 @@
+.filter-ele {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-ele .icon {
+  width: 16px;
+}
+.filter-container {
+  position: relative;
+}
+.filter-container .content {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  background-color: #e1e1e1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 100;
+}

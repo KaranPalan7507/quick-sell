@@ -1,0 +1,33 @@
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-content {
+  max-width: calc(100% - 50px);
+}
+.card .id {
+  color: #a1a1a1;
+  margin-bottom: 4px;
+}
+.card .title {
+  color: black;
+  margin-bottom: 8px;
+}
+.card .tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.card .tag {
+  border: 1px solid #e3e3e3;
+  padding: 4px;
+  border-radius: 4px;
+  color: #a1a1a1;
+  font-size: 12px;
+}

@@ -1,0 +1,41 @@
+.select-ele {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  min-width: 100px;
+  justify-content: space-between;
+}
+.select-ele .icon {
+  width: 16px;
+}
+.select-container {
+  position: relative;
+}
+.select-container .select-menu {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: white;
+}
+.select-menu {
+  list-style: none;
+  z-index: 10;
+  padding: 0;
+  width: 100%;
+  user-select: none;
+}
+.select-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+.select-menu li:hover {
+  background-color: #f0f0f0;
+}
