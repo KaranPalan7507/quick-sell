@@ -36,15 +36,18 @@ function Board({ data }) {
   const renderPriorityGroupName = (priority) => {
     return <div className="group-name">{PRIORITY[priority]}</div>;
   };
+  if (!(groupData && localStorageData.groupBy && localStorageData.orderBy)) {
+    return <></>;
+  }
   return (
     <div className="board-groups">
       {groupData.map((item) => {
         const [groupName, groupItems] = item;
         return (
           <div className="group" key={groupName}>
-            {localStorage.groupBy.indexOf("userId") >= 0 ? (
+            {localStorageData.groupBy.indexOf("userId") >= 0 ? (
               renderUserGroupName(groupName)
-            ) : localStorage.groupBy.indexOf("priority") ? (
+            ) : localStorageData.groupBy.indexOf("priority") ? (
               renderPriorityGroupName(groupName)
             ) : (
               <div className="group-name">{groupName}</div>

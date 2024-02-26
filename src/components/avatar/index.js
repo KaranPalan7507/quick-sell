@@ -1,5 +1,5 @@
 import "./style.css";
-const Avatar = ({ name, available }) => {
+const Avatar = ({ name="", available }) => {
   const initials = name
     .split(" ")
     .map((part) => part.charAt(0))
